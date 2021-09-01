@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/Vodianova-V/Cheese/badge.svg?branch=master)](https://coveralls.io/github/Vodianova-V/Cheese?branch=master)
+
 ech
 ==============================
 
