@@ -7,14 +7,12 @@ import os
 # https://docs.djangoproject.com/en/dev/ref/settings/#debug
 DEBUG = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
-<<<<<<< HEAD
+
 SECRET_KEY = env(
     "DJANGO_SECRET_KEY",
     default="!pv8#zuwn&p28+$-i9=woxu8gl&h=e9egsx(9ebw5(x$g4wb(u",
 )
-=======
-SECRET_KEY = os.environ["SECRET_KEY"]
->>>>>>> 54c73f498c96b236d6aa0992a51d0e8d7db24dd3
+
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1"]
 
