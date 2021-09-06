@@ -5,7 +5,7 @@ Base settings to build other settings files upon.
 from pathlib import Path
 
 import environ
-import django_heroku
+# import django_heroku
 
 # ech/
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
@@ -284,4 +284,4 @@ ACCOUNT_ADAPTER = "ech.users.adapters.AccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 SOCIALACCOUNT_ADAPTER = "ech.users.adapters.SocialAccountAdapter"
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
