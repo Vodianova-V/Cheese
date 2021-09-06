@@ -6,7 +6,12 @@ from pathlib import Path
 
 import environ
 
-# import django_heroku
+import os
+import dotenv
+
+dotenv_file = os.path.join(BASE_DIR, ".env")
+if os.path.isfile(dotenv_file):
+    dotenv.load_dotenv(dotenv_file)
 
 # ech/
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
