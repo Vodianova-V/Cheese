@@ -41,6 +41,7 @@ LOCALE_PATHS = [str(BASE_DIR / "locale")]
 
 WSGI_APPLICATION = "gettingstarted.wsgi.application"
 
+
 # DATABASES
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
