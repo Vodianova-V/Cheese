@@ -54,3 +54,5 @@ django-anymail[mailgun]==8.0
 django-redis==4.12.1  # https://github.com/jazzband/django-redis
 pycodestyle==2.6.0
 
+
+python-dotenv~=0.19.0
