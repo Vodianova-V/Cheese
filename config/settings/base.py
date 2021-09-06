@@ -5,6 +5,7 @@ Base settings to build other settings files upon.
 from pathlib import Path
 
 import environ
+import django_heroku
 
 # ech/
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
@@ -41,6 +42,7 @@ LOCALE_PATHS = [str(BASE_DIR / "locale")]
 
 WSGI_APPLICATION = "gettingstarted.wsgi.application"
 
+ROOT_URLCONF = "gettingstarted.urls"
 
 # DATABASES
 # ------------------------------------------------------------------------------
@@ -281,3 +283,5 @@ ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 ACCOUNT_ADAPTER = "ech.users.adapters.AccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 SOCIALACCOUNT_ADAPTER = "ech.users.adapters.SocialAccountAdapter"
+
+django_heroku.settings(locals())
