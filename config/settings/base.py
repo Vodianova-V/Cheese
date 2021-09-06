@@ -41,9 +41,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#locale-paths
 LOCALE_PATHS = [str(BASE_DIR / "locale")]
 
-WSGI_APPLICATION = "gettingstarted.wsgi.application"
+WSGI_APPLICATION = "config.wsgi.application"
 
-ROOT_URLCONF = "gettingstarted.urls"
+ROOT_URLCONF = "config.urls"
 
 # DATABASES
 # ------------------------------------------------------------------------------
