@@ -7,7 +7,7 @@ import os
 # https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
 SECRET_KEY = os.environ["SECRET_KEY"]
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["everycheese.com"])
 
 # DATABASES
 # ------------------------------------------------------------------------------
@@ -23,8 +23,8 @@ DATABASES["default"]["CONN_MAX_AGE"] = env.int("CONN_MAX_AGE", default=60)  # no
 #         "LOCATION": "redis://127.0.0.1:6379/1",  # noqa
 #         "OPTIONS": {  # noqa
 #             "CLIENT_CLASS": "django_redis.client.DefaultClient",  # noqa
-            # Mimicing memcache behavior.  # noqa
-            # http://niwinz.github.io/django-redis/latest/#_memcached_exceptions_behavior  # noqa
+# Mimicing memcache behavior.  # noqa
+# http://niwinz.github.io/django-redis/latest/#_memcached_exceptions_behavior  # noqa
 #             "IGNORE_EXCEPTIONS": True,  # noqa
 #         },  # noqa
 #     }  # noqa
