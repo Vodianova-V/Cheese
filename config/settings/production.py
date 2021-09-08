@@ -17,18 +17,18 @@ DATABASES["default"]["CONN_MAX_AGE"] = env.int("CONN_MAX_AGE", default=60)  # no
 
 # CACHES
 # ------------------------------------------------------------------------------
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": env("REDIS_URL"),
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-            # Mimicing memcache behavior.
-            # http://niwinz.github.io/django-redis/latest/#_memcached_exceptions_behavior
-            "IGNORE_EXCEPTIONS": True,
-        },
-    }
-}
+# CACHES = {  # noqa
+#     "default": {  # noqa
+#         "BACKEND": "django_redis.cache.RedisCache",  # noqa
+#         "LOCATION": "redis://127.0.0.1:6379/1",  # noqa
+#         "OPTIONS": {  # noqa
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",  # noqa
+# Mimicing memcache behavior.  # noqa
+# http://niwinz.github.io/django-redis/latest/#_memcached_exceptions_behavior  # noqa
+#             "IGNORE_EXCEPTIONS": True,  # noqa
+#         },  # noqa
+#     }  # noqa
+# }  # noqa
 
 # SECURITY
 # ------------------------------------------------------------------------------
