@@ -23,8 +23,8 @@ DATABASES["default"]["CONN_MAX_AGE"] = env.int("CONN_MAX_AGE", default=60)  # no
 #         "LOCATION": "redis://127.0.0.1:6379/1",  # noqa
 #         "OPTIONS": {  # noqa
 #             "CLIENT_CLASS": "django_redis.client.DefaultClient",  # noqa
-            # Mimicing memcache behavior.  # noqa
-            # http://niwinz.github.io/django-redis/latest/#_memcached_exceptions_behavior  # noqa
+# Mimicing memcache behavior.  # noqa
+# http://niwinz.github.io/django-redis/latest/#_memcached_exceptions_behavior  # noqa
 #             "IGNORE_EXCEPTIONS": True,  # noqa
 #         },  # noqa
 #     }  # noqa
